@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/gambarchat"
+        android:title="Chat" />
+    <item
+        android:id="@+id/nav_sensor"
+        android:icon="@drawable/home1"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/nav_volley_court"
+        android:icon="@drawable/icon_volley"
+        android:title="Lapangan Voli" />
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/gambarprofil"
+        android:title="Kontak" />
+
+    <item
+        android:id="@+id/nav_film"
+        android:icon="@drawable/gambarprofil"
+        android:title="Kontak" />
+
+</menu>

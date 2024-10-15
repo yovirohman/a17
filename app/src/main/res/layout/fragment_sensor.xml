@@ -1,0 +1,126 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue"
+    android:padding="16dp">
+
+
+
+    <Switch
+        android:id="@+id/alertSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aktifkan Suara Peringatan"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+    <EditText
+        android:id="@+id/searchLocationEditText"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/iconeditteks"
+        android:layout_marginEnd="10dp"
+        android:hint="Cari lokasi" />
+
+    <Button
+        android:id="@+id/searchLocationButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/cari"
+        android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/detailLocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Lokasi"
+            android:shadowColor="@color/light_blue"
+            android:layout_marginEnd="16dp" /> <!-- Spasi antara tombol -->
+
+        <Button
+            android:id="@+id/myLocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali ke Lokasi Saya" />
+    </LinearLayout>
+
+    <!-- Tambahkan TextView untuk menampilkan detail lokasi -->
+    <TextView
+        android:id="@+id/locationDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"/>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/accelerometerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconeditteks"
+        android:text="Akselerometer: "/>
+
+    <TextView
+        android:id="@+id/gravityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconeditteks"
+        android:text="Gravitasi: "
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/magneticFieldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconeditteks"
+        android:text="Medan Magnet: "
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/gpsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS: "
+        android:background="@drawable/iconeditteks"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
